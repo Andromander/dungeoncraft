@@ -1,0 +1,6 @@
+item.gold_ring.name=Gold Ring
+item.iron_spear.name=Spear
+item.iron_halberd.name=Halberd
+item.iron_dagger.name=Dagger
+entity.orc.name=Orc
+itemGroup.dungeoncraft=DungeonCraft Tab
