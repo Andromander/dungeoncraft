@@ -1,0 +1,35 @@
+{
+
+  "type": "forge:ore_shaped",
+
+  "pattern": [
+
+    "  #",
+
+    " X "
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "minecraft:iron_ingot"
+
+    },
+
+    "X": {
+
+      "item": "minecraft:stick"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "dc:iron_dagger"
+
+  }
+
+}

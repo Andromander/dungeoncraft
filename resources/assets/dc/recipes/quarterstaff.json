@@ -1,0 +1,31 @@
+{
+
+  "type": "forge:ore_shaped",
+
+  "pattern": [
+
+    "  X",
+
+    " X ",
+
+    "X  "
+
+  ],
+
+  "key": {
+
+    "X": {
+
+      "item": "minecraft:stick"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "dc:quarterstaff"
+
+  }
+
+}

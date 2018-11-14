@@ -24,16 +24,21 @@ import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntitySelectors;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
+import net.minecraft.world.storage.loot.LootTableList;
 
-public class EntityOrc extends EntityMob
+public class EntitySkeleton1 extends EntityMob
 {
 
-    public EntityOrc(World worldIn) {
+    public EntitySkeleton1(World worldIn) {
         super(worldIn);
         this.setSize(0.6F, 1.95F);
     }
@@ -66,6 +71,27 @@ public class EntityOrc extends EntityMob
         }
         
         @Nullable
+        protected ResourceLocation getLootTable()
+        {
+            return LootTableList.ENTITIES_SKELETON;
+        }
+
+        protected SoundEvent getAmbientSound()
+        {
+            return SoundEvents.ENTITY_SKELETON_AMBIENT;
+        }
+
+        protected SoundEvent getHurtSound(DamageSource p_184601_1_)
+        {
+            return SoundEvents.ENTITY_SKELETON_HURT;
+        }
+
+        protected SoundEvent getDeathSound()
+        {
+            return SoundEvents.ENTITY_SKELETON_DEATH;
+        }
+        
+        @Nullable
         public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, @Nullable IEntityLivingData livingdata)
         {
             livingdata = super.onInitialSpawn(difficulty, livingdata);
@@ -74,12 +100,12 @@ public class EntityOrc extends EntityMob
 
             if (livingdata == null)
             {
-                livingdata = new EntityOrc.GroupData(this.world.rand.nextFloat() < net.minecraftforge.common.ForgeModContainer.zombieBabyChance);
+                livingdata = new EntitySkeleton1.GroupData(this.world.rand.nextFloat() < net.minecraftforge.common.ForgeModContainer.zombieBabyChance);
             }
 
-            if (livingdata instanceof EntityOrc.GroupData)
+            if (livingdata instanceof EntitySkeleton1.GroupData)
             {
-                EntityOrc.GroupData entityzombie$groupdata = (EntityOrc.GroupData)livingdata;
+                EntitySkeleton1.GroupData entityzombie$groupdata = (EntitySkeleton1.GroupData)livingdata;
 
              
             }

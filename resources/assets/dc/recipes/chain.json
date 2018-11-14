@@ -1,0 +1,37 @@
+{
+
+  "type": "forge:ore_shaped",
+
+  "pattern": [
+
+    " # ",
+
+    "#X#",
+    
+    " # "
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "minecraft:iron_nugget"
+
+    },
+
+    "X": {
+
+      "item": "minecraft:string"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "dc:chain"
+
+  }
+
+}

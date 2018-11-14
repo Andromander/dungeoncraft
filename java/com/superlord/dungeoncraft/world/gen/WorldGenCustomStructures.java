@@ -1,6 +1,7 @@
 package com.superlord.dungeoncraft.world.gen;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 import com.superlord.dungeoncraft.world.gen.generators.WorldGenStructure;
@@ -16,7 +17,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import scala.actors.threadpool.Arrays;
 
 public class WorldGenCustomStructures implements IWorldGenerator {
 
